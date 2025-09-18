@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazoNext - Desenvolvendo o Futuro</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-primary text-primary">
+
+    <header class="fixed top-0 left-0 w-full z-50 p-4">
+        <div class="container mx-auto">
+            <nav class="flex justify-between items-center bg-[#121212]/50 backdrop-blur-lg border border-color rounded-lg px-6 py-3 shadow-lg">
+                <a href="#" class="flex items-center text-2xl font-bold tracking-wider">
+                    <img src="assets/images/AmazoNext_logo.png" alt="Logo da AmazoNext" class="h-12 w-12 mr-3">
+                    <span>Amazo<span class="accent-color">Next</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8 text-secondary">
+                    <a href="#about" class="hover:text-primary transition-colors">Sobre</a>
+                    <a href="#code-philosophy" class="hover:text-primary transition-colors">Filosofia</a>
+                    <a href="#projects" class="hover:text-primary transition-colors">Projetos</a>
+                    <a href="#contact" class="px-5 py-2 border border-color rounded-full hover:border-accent-color hover:text-accent-color transition-all">Contato</a>
+                </div>
+                <div class="md:hidden" id="menu-toggle">
+                    <i data-feather="menu" class="text-primary cursor-pointer"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-primary z-50 flex flex-col items-center justify-center space-y-8 text-2xl opacity-0 pointer-events-none">
+        <div class="absolute top-8 right-8" id="close-menu">
+            <i data-feather="x" class="text-primary cursor-pointer h-8 w-8"></i>
+        </div>
+        <a href="#about" class="text-secondary hover:text-primary transition-colors">Sobre</a>
+        <a href="#code-philosophy" class="text-secondary hover:text-primary transition-colors">Filosofia</a>
+        <a href="#projects" class="text-secondary hover:text-primary transition-colors">Projetos</a>
+        <a href="#contact" class="text-secondary hover:text-primary transition-colors">Contato</a>
+    </div>
+
+
+    <main>
+        <section class="min-h-screen flex items-center justify-center text-center px-4">
+            <div class="max-w-4xl animate-on-scroll">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-tight">
+                    Construindo o Futuro,
+                    <span class="accent-color block mt-2 md:mt-4">Linha por Linha.</span>
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-secondary">
+                    Somos um coletivo de desenvolvedores apaixonados por tecnologia e inovação, transformando ideias em soluções robustas e escaláveis.
+                </p>
+                <a href="#projects" class="mt-10 inline-block accent-bg text-primary font-bold py-4 px-10 rounded-full text-lg hover:shadow-lg hover:shadow-[#22c55e]/20 transform hover:scale-105 transition-all duration-300 cta-glow">
+                    Conheça nossos projetos
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-2 animate-on-scroll">
+                        <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Nossa Jornada.</h2>
+                        <div class="w-24 h-1 accent-bg mt-4 rounded-full underline-animate animate-on-scroll"></div>
+                    </div>
+                    <div class="md:col-span-3 text-secondary text-lg leading-relaxed space-y-6 animate-on-scroll" style="transition-delay: 200ms;">
+                        <p>
+                            A <span class="text-primary font-medium">AmazoNext</span> nasceu da evolução. O que começou em 2024 como um grupo de estudo e colaboração sob o nome de <span class="text-primary font-medium">"The Heapsters"</span>, floresceu para se tornar um coletivo focado em criar projetos de código aberto que causam impacto.
+                        </p>
+                        <p>
+                            Nossa missão é explorar novas tecnologias, compartilhar conhecimento e contribuir para a comunidade de desenvolvimento, sempre com um olhar para a qualidade e a inovação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="code-philosophy" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Nossa Filosofia em Código</h2>
+                    <p class="mt-4 text-lg text-secondary max-w-3xl mx-auto">
+                        Acreditamos que nosso ethos pode ser expresso através do que fazemos de melhor: código.
+                    </p>
+                </div>
+                
+                <div class="animate-on-scroll" style="transition-delay: 200ms;">
+                    <div class="code-editor">
+                        <div class="code-header">
+                            <div class="code-dots flex">
+                                <span style="background-color: #ff5f56;"></span>
+                                <span style="background-color: #ffbd2e;"></span>
+                                <span style="background-color: #27c93f;"></span>
+                            </div>
+                            <span class="text-sm text-secondary ml-4">AmazoNext.java</span>
+                        </div>
+                        <div class="code-body">
+<span class="package">package</span> dev.amazonext;
+<span class="keyword">import</span> java.util.Set;
+
+<span class="comment">/**
+ * A classe que representa a essência da AmazoNext.
+ * Nascemos da colaboração e crescemos com a paixão por criar.
+ */</span>
+<span class="keyword">public class</span> <span class="class-name">AmazoNext</span> {
+
+    <span class="keyword">private static final</span> String ORIGEM = <span class="string">"The Heapsters (2024)"</span>;
+    <span class="keyword">private final</span> Set&lt;String&gt; principios;
+
+    <span class="keyword">public</span> <span class="method">AmazoNext</span>() {
+        <span class="keyword">this</span>.principios = Set.of(
+            <span class="string">"Código Aberto"</span>,
+            <span class="string">"Inovação Constante"</span>,
+            <span class="string">"Comunidade"</span>,
+            <span class="string">"Qualidade"</span>
+        );
+    }
+
+    <span class="comment">/**
+     * O método que impulsiona nossa jornada: transformar ideias em realidade.
+     * @param idea A próxima grande ideia.
+     */</span>
+    <span class="keyword">public void</span> <span class="method">desenvolver</span>(String idea) {
+        <span class="comment">// Lógica para transformar café ☕ em código...</span>
+        System.<span class="method">out</span>.println(<span class="string">"Iniciando desenvolvimento: "</span> + idea);
+    }
+    
+    <span class="keyword">public void</span> <span class="method">printManifesto</span>() {
+        System.<span class="method">out</span>.println(<span class="string">"Construindo o futuro, linha por linha."</span>);
+    }
+}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="py-20 md:py-32 bg-surface">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto animate-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Projetos em Destaque</h2>
+                    <p class="mt-4 text-lg text-secondary">
+                        Exploramos diversas áreas, desde ferramentas de produtividade até soluções de infraestrutura. Confira alguns de nossos trabalhos.
+                    </p>
+                </div>
+                
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <a href="https://github.com/amazonext/calop-agender" target="_blank" rel="noopener noreferrer" class="group block project-card bg-primary p-8 rounded-xl border border-color animate-on-scroll" style="transition-delay: 100ms;">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-primary">Calop Agender</h3>
+                            <i data-feather="github" class="text-secondary transition-colors duration-300 group-hover:accent-color"></i>
+                        </div>
+                        <p class="mt-4 text-secondary">App mobile para Android e iOS em React Native, focado em agendamentos para estabelecimentos que necessitam de hora marcada.</p>
+                        <div class="mt-6 flex items-center space-x-2">
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Mobile</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">React Native</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Agendamentos</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/amazonext/duck-manager" target="_blank" rel="noopener noreferrer" class="group block project-card bg-primary p-8 rounded-xl border border-color animate-on-scroll" style="transition-delay: 200ms;">
+                         <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-primary">Duck Manager</h3>
+                            <i data-feather="github" class="text-secondary transition-colors duration-300 group-hover:accent-color"></i>
+                        </div>
+                        <p class="mt-4 text-secondary">Aplicação desktop para gerenciamento de estoques, desenvolvida com Java e JavaScript para uma performance robusta.</p>
+                        <div class="mt-6 flex items-center space-x-2">
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Desktop</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Java</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Gestão de Estoque</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/amazonext/LogFlux" target="_blank" rel="noopener noreferrer" class="group block project-card bg-primary p-8 rounded-xl border border-color animate-on-scroll" style="transition-delay: 300ms;">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-primary">LogFlux</h3>
+                            <i data-feather="github" class="text-secondary transition-colors duration-300 group-hover:accent-color"></i>
+                        </div>
+                        <p class="mt-4 text-secondary">Analisador de logs que transforma arquivos de syslog complexos em insights claros e acionáveis, diretamente no seu navegador.</p>
+                        <div class="mt-6 flex items-center space-x-2">
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Python</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Flask</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Web App</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/amazonext/br-connect" target="_blank" rel="noopener noreferrer" class="group block project-card bg-primary p-8 rounded-xl border border-color animate-on-scroll" style="transition-delay: 400ms;">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-primary">BR Connect</h3>
+                            <i data-feather="github" class="text-secondary transition-colors duration-300 group-hover:accent-color"></i>
+                        </div>
+                        <p class="mt-4 text-secondary">Aplicativo de networking para Android e iOS, voltado para eventos e interações sociais, construído com React Native.</p>
+                        <div class="mt-6 flex items-center space-x-2">
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Mobile</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">React Native</span>
+                             <span class="text-xs font-medium accent-color bg-[#22c55e]/10 px-3 py-1 rounded-full">Networking</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <div class="animate-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Vamos Criar Algo Juntos?</h2>
+                    <p class="mt-4 text-lg text-secondary">
+                        Estamos sempre abertos a novas ideias, colaborações e desafios. Se você tem um projeto em mente ou quer fazer parte da nossa comunidade, entre em contato.
+                    </p>
+                    <a href="mailto:contato@amazonext.dev" class="mt-10 inline-block text-xl accent-color font-medium group transition-all duration-300">
+                        amazonext0@gmail.com
+                        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 accent-bg"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-color py-8">
+        <div class="container mx-auto px-6 text-center text-secondary">
+             <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/amazonext" target="_blank" rel="noopener noreferrer" class="hover:accent-color transition-colors duration-300 transform hover:-translate-y-1">
+                    <i data-feather="github"></i>
+                </a>
+                </div>
+            <p>&copy; <span id="current-year"></span> AmazoNext. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
